@@ -1,0 +1,18 @@
+[package]
+name = "bt_error"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0.103"
+syn = "2"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
+quote = "1"
+tracing-test = "0.2.5"
+
+[dev-dependencies]
+derive_more = { version = "2.1.0", features = ["display", "error"] }
